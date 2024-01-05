@@ -1,0 +1,83 @@
+#looks {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+#looks table {
+  width: 100%;
+  border: #274757 solid 2px;
+}
+#looks tr {
+  display: grid;
+  grid-template-columns: 80px 5fr 2fr 2fr 2fr 2fr 2fr;
+  border: #274757 solid 2px;
+}
+#looks th {
+  height: 50px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+#looks th,
+#looks td {
+  padding: 4px;
+  vertical-align: middle;
+}
+#looks th:not(.state),
+#looks td:not(.state) {
+  border-left: #274757 solid 2px;
+}
+#looks .state {
+  grid-column: 1/2;
+  display: grid;
+  place-items: center;
+}
+#looks .state span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#looks input {
+  padding: 11px;
+  border: 1px solid #274757;
+  background-color: #6EC8F5;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#looks .red span {
+  background-color: #fe6161;
+}
+#looks .yellow span {
+  background-color: #fefe61;
+}
+#looks .green span {
+  background-color: #61fea8;
+}
+#looks .blue span {
+  background-color: #618dfe;
+}
+#looks .item {
+  grid-column: 2/3;
+}
+#looks .group {
+  grid-column: 3/4;
+}
+#looks .nom {
+  grid-column: 4/5;
+}
+#looks .term {
+  grid-column: 5/6;
+}
+#looks .termH {
+  grid-column: 6/7;
+}
+#looks .zone {
+  grid-column: 7/8;
+}
+
+#looksList {
+  width: 100%;
+}/*# sourceMappingURL=looks.css.map */

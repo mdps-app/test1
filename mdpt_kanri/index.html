@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link href="./index.css" rel="stylesheet" />
+  <link href="./css/looks.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let submitted = false;
+  </script>
+  <input id="checkbox" type="checkbox">
+  <span id="triangle"></span>
+  <header id="header">
+    <div id="titles">
+      <img src="https://placehold.jp/100x100.png" alt="logo" id="title-logo">
+      <h1 id="title">備品管理システム<br>ーMDPSー</h1>
+    </div>
+    <ul id="menus">
+      <li id="dashboardM">
+        <a href="#dashboard">
+          <p>ダッシュボード</p>
+          <span class="material-symbols-outlined">dashboard</span>
+        </a>
+      </li>
+      <li id="looksM">
+        <a href="#looks">
+          <p>一覧</p>
+          <span class="material-symbols-outlined">database</span>
+        </a>
+      </li>
+      <li id="mapM">
+        <a href="#map">
+          <p>配置図</p>
+          <span class="material-symbols-outlined">map</span>
+        </a>
+      </li>
+      <li id="settingM">
+        <a href="#setting">
+          <p>設定</p>
+          <span class="material-symbols-outlined">settings</span>
+        </a>
+      </li>
+      <li id="informationM">
+        <a href="#information">
+          <p>更新情報</p>
+          <span class="material-symbols-outlined"> info</span>
+        </a>
+      </li>
+      <li id="door">
+        <p id="byM">by MDPT</p>
+        <label for="checkbox"><span class="material-symbols-outlined">menu</span></label>
+      </li>
+    </ul>
+  </header>
+  <main id="main">
+    <label for="flag_sub_window" class="open_sub_window"><span></span></label>
+<input type="checkbox" id="flag_sub_window" class="check_sub_window">
+<label for="flag_sub_window" class="bg_sub_window">
+    <label class="sub_window">
+        <label for="flag_sub_window" class="close_sub_window"></label>
+        <div id="post">
+          <form class="c-form"
+            action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfmiZLkmHV1qnXUSPsQbfr4fWOVI2Nn1su3W7j7DMC4uLbc2w/formResponse"
+            method="post" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+            <div class="c-form__item c-1">
+              <label class="c-form__label" for="form-item">品名<span class="c-form__required">必須</span></label>
+              <input name="entry.1807935411" class="c-form__input" id="form-item" placeholder="品名を記入してください" type="text"
+                required="required" />
+            </div>
+            <div class="c-form__item c-2">
+              <div class="c-form__label">分類<span class="c-form__required">必須</span></div>
+              <select name="entry.886913332" title="select" class="c-form__input" id="form-group" required="required">
+                <option value="">選択肢を選んでください</option>
+                <option name="entry.886913332" value="衛生">衛生</option>
+                <option name="entry.886913332" value="食品">食品</option>
+                <option name="entry.886913332" value="衣類">衣類</option>
+                <option name="entry.886913332" value="安全">安全</option>
+                <option name="entry.886913332" value="暮らし">暮らし</option>
+                <option name="entry.886913332" value="トイレ">トイレ</option>
+              </select>
+            </div>
+            <div class="c-form__item c-3">
+              <label class="c-form__label" for="form-nom">個数</label>
+              <input name="entry.1455539818" class="c-form__input" id="form-nom" placeholder="個数を記入してください"></input>
+            </div>
+            <div class="c-form__item c-4">
+              <label class="c-form__label" for="form-term">期限</label>
+              <input type="date" name="entry.323595404" class="c-form__input" id="form-term" required="required" />
+            </div>
+            <div class="c-form__item c-5">
+              <label class="c-form__label" for="form-termH">保管期限</label>
+              <input type="date" name="entry.533347458" class="c-form__input" id="form-termH" required="required" />
+            </div>
+            <div class="c-form__item c-6">
+              <div class="c-form__label">保管区域</div>
+              <select name="entry.318347407" title="select" class="c-form__input" id="form-zone" required="required">
+                <option value="">選択肢を選んでください</option>
+                <option name="entry.318347407" value="A1">A1</option>
+                <option name="entry.318347407" value="A2">A2</option>
+                <option name="entry.318347407" value="A3">A3</option>
+              </select>
+            </div>
+            <div class="c-form__submit">
+              <button type="submit">送信する</button>
+            </div>
+          </form>
+        </div>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+          onload="if(submitted){location.reload();}"></iframe>
+    </label>
+</label>
+    <span id="dashboard"></span>
+    <span id="looks"></span>
+    <span id="map"></span>
+    <span id="setting"></span>
+    <span id="information"></span>
+  </main>
+
+  <script src="./looks.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    let oldUrl = '';
+    const observer = new MutationObserver(() => {
+      if (oldUrl !== location.href) {
+        oldUrl = location.href;
+      }
+    });
+    window.onload = function() {document.getElementById('flag_sub_window').checked = false;}
+    window.addEventListener('DOMContentLoaded', () => {
+      hash(location.hash);
+      observer.observe(document.body, {
+        subtree: true,
+        childList: true,
+        attributes: true,
+        characterData: true
+      });
+    });
+    window.addEventListener("popstate", () => { hash(location.hash); });
+  </script>
+</body>
+
+</html>

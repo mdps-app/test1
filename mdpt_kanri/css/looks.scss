@@ -1,0 +1,110 @@
+#looks {
+    width: 100%;
+    height: 100%;
+
+    overflow: scroll;
+
+    table {
+        width: 100%;
+        border: #274757 solid 2px;
+    }
+
+    tr {
+        display: grid;
+        grid-template-columns: 80px 5fr 2fr 2fr 2fr 2fr 2fr;
+        border: #274757 solid 2px;
+    }
+
+    th {
+        height: 50px;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+
+    th,
+    td {
+        padding: 4px;
+        vertical-align: middle;
+    }
+
+    th:not(.state),
+    td:not(.state) {
+        border-left: #274757 solid 2px;
+    }
+
+    .state {
+        grid-column: 1 / 2;
+        display: grid;
+        place-items: center;
+
+        span {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    }
+
+    input {
+        padding: 11px;
+        border: 1px solid #274757;
+        background-color: #6EC8F5;
+        border-radius: 5px;
+        font-size: 1em;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .red {
+        span {
+            background-color: #fe6161;
+        }
+    }
+
+    .yellow {
+        span {
+            background-color: #fefe61;
+        }
+    }
+
+    .green {
+        span {
+            background-color: #61fea8;
+        }
+    }
+
+    .blue {
+        span {
+            background-color: #618dfe;
+        }
+    }
+
+    .item {
+        grid-column: 2 / 3;
+    }
+
+    .group {
+        grid-column: 3 / 4;
+    }
+
+    .nom {
+        grid-column: 4 / 5;
+    }
+
+    .term {
+        grid-column: 5 / 6;
+    }
+
+    .termH {
+        grid-column: 6 / 7;
+    }
+
+    .zone {
+        grid-column: 7 / 8;
+    }
+}
+
+#looksList {
+    width: 100%;
+}
