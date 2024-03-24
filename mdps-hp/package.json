@@ -10,7 +10,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"deploy": "npm run build && gh-pages -d main-hp -b deploy-240324"
+		"deploy": "npm run build && gh-pages -d mainHp -b deploy-240324"
 
 	},
 	"devDependencies": {
